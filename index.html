@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML editor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <form action="">
+            <h1>Choose a sport</h1>
+            <select id="sport-select" onchange="repopulate()">
+            </select>
+            <h1>Choose fitness level</h1>
+            <select id="fitness-select">
+            </select>
+            <h1>Choose speed level</h1>
+            <select id="speed-select">
+            </select>
+            <h1>Choose tallness level</h1>
+            <select id="tallness-select">
+            </select>
+            <h1>Choose weight level</h1>
+            <select id="weight-select">
+            </select>
+            <br>
+            <br>
+            <input type="button" value="Save" onclick="save()">
+            <input id="download-button" type="button" value="Download">
+            <input type="file" id="file-upload" value="upload" accept=".xml">
+            <br>
+            <h2>Add a new sport</h2>
+            <input type="text" id="new-game"placeholder="New sport">
+            <input type="button" id="new-game-button" value="Add sport">
+        </form>
+        <div>
+            <h1>XML</h1>
+            <p id="new-xml"></p>
+        </div>
+    </main>
+<script src="./edit.js"></script>
+
+</body>
+</html>
